@@ -7,7 +7,7 @@ export function renderFooter() {
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <a href="/index.html" aria-label="KUROMART beranda"><img src="/assets/logo/kuromart-footer.svg" alt="KUROMART — semua yang kamu butuhkan" width="460" height="112"></a>
+          <a class="footer-wordmark" href="/index.html" aria-label="KUROMART beranda">KURO<span>MART</span></a>
           <p class="footer-note">Marketplace multi-toko untuk kebutuhan harianmu. Temukan pilihan menarik, dari gadget sampai kebutuhan rumah.</p>
         </div>
         <div><h4>Belanja</h4><a href="/pages/products.html">Semua produk</a><a href="/pages/products.html?category=elektronik">Elektronik</a><a href="/pages/products.html?category=fashion">Fashion</a></div>
