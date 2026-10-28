@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KUROMART - Semua yang Kamu Butuhkan</title>
+  <meta name="description" content="KUROMART, marketplace multi-toko untuk gadget, fashion, rumah tangga, kecantikan, dan olahraga.">
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/home.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Marketplace multi-toko</span>
+          <h1>Belanja cepat, <span class="accent">semua</span> ada di sini.</h1>
+          <p class="lead">Dari earbuds sampai panci, ratusan toko terpercaya siap mengirim ke rumahmu. Harga jelas, pengiriman terlacak.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/pages/products.html">Mulai belanja</a>
+            <a class="btn btn-ghost-light" href="/pages/products.html?category=gadget">Lihat gadget</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>Toko mitra</dt><dd>240+</dd></div>
+            <div><dt>Produk aktif</dt><dd>12.000+</dd></div>
+            <div><dt>Pengiriman</dt><dd>1-3 hari</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card visual-main">
+            <img src="/assets/logo/kuromart-mark.svg" alt="">
+          </div>
+          <div class="visual-card visual-float visual-float-a">
+            <span class="float-label">Pesanan dikirim</span>
+            <strong>Earbuds Nirkabel Pro</strong>
+          </div>
+          <div class="visual-card visual-float visual-float-b">
+            <span class="float-label">Diskon hari ini</span>
+            <strong>Sampai 30%</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow-dark">Kategori</p>
+            <h2>Mau cari apa hari ini?</h2>
+          </div>
+          <a class="link-arrow" href="/pages/products.html">Lihat semua</a>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow-dark">Paling diminati</p>
+            <h2>Produk pilihan pembeli</h2>
+          </div>
+          <a class="link-arrow" href="/pages/products.html?sort=popular">Lihat semua</a>
+        </div>
+        <div class="product-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container promo">
+        <div class="promo-copy">
+          <p class="eyebrow">Keuntungan KUROMART</p>
+          <h2>Belanja tanpa ribet, dari pesan sampai diterima.</h2>
+        </div>
+        <ul class="promo-points">
+          <li><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span><div><strong>Pengiriman cepat</strong><span>Lacak paket dari gudang sampai depan pintu.</span></div></li>
+          <li><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><strong>Transaksi aman</strong><span>Dana tertahan hingga pesananmu diterima.</span></div></li>
+          <li><span class="point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg></span><div><strong>Retur mudah</strong><span>Ajukan pengembalian langsung dari riwayat pesanan.</span></div></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/home.js"></script>
+</body>
+</html>

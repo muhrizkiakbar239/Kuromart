@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Keranjang - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/cart.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+
+  <main id="main" class="container page-main">
+    <header class="page-head">
+      <p class="eyebrow eyebrow-dark">Keranjang</p>
+      <h1>Keranjang belanja</h1>
+    </header>
+
+    <div class="cart-layout">
+      <div class="cart-items" id="cart-items" aria-live="polite"></div>
+
+      <aside class="cart-summary" id="cart-summary" hidden>
+        <h2>Ringkasan</h2>
+        <div class="sum-row"><span id="sum-count">0 barang</span><span id="sum-subtotal">Rp0</span></div>
+        <div class="sum-row muted"><span>Ongkir</span><span>Dihitung saat checkout</span></div>
+        <div class="sum-total"><span>Total</span><strong id="sum-total">Rp0</strong></div>
+        <a class="btn btn-primary btn-block" href="/pages/checkout.html">Lanjut ke checkout</a>
+        <p class="fine-print">Harga sudah termasuk PPN. Promo dan voucher dapat digunakan saat checkout.</p>
+      </aside>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Katalog - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/products.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+
+  <main id="main" class="container page-main">
+    <header class="page-head">
+      <p class="eyebrow eyebrow-dark">Katalog</p>
+      <h1 id="catalog-title">Semua produk</h1>
+    </header>
+
+    <div class="catalog-toolbar">
+      <form id="catalog-form" class="catalog-search" role="search">
+        <input id="catalog-search" type="search" placeholder="Cari di katalog" aria-label="Cari di katalog">
+        <button class="btn btn-primary btn-small" type="submit">Cari</button>
+      </form>
+      <label class="select-wrap">
+        <span class="sr-only">Urutkan</span>
+        <select id="sort-select">
+          <option value="popular">Paling laris</option>
+          <option value="rating">Rating tertinggi</option>
+          <option value="priceAsc">Harga terendah</option>
+          <option value="priceDesc">Harga tertinggi</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="chip-row" id="category-chips" role="group" aria-label="Filter kategori"></div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+
+    <div class="product-grid" id="product-grid"></div>
+    <div class="load-more-wrap">
+      <button class="btn btn-ghost" id="load-more" type="button" hidden>Muat lebih banyak</button>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/products.js"></script>
+</body>
+</html>

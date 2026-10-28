@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Daftar - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/auth.css">
+  <link rel="stylesheet" href="/assets/css/pages/seller-dashboard.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+  <main id="main" class="container auth-wrap">
+    <section class="auth-card">
+      <p class="eyebrow eyebrow-dark">Buat akun</p>
+      <h1>Daftar di KUROMART</h1>
+      <p class="muted">Gratis dan hanya butuh beberapa detik.</p>
+      <form id="auth-form" class="form" novalidate>
+        <label class="field"><span>Nama lengkap</span><input type="text" name="fullName" autocomplete="name" minlength="3" maxlength="80" required></label>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+        <label class="field"><span>Kata sandi</span><input type="password" name="password" autocomplete="new-password" minlength="8" required></label>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="btn btn-primary btn-block" type="submit">Buat akun</button>
+      </form>
+      <p class="auth-switch">Sudah punya akun? <a href="/pages/login.html">Masuk</a></p>
+    </section>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/register.js"></script>
+</body>
+</html>

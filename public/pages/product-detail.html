@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Detail Produk - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/product-detail.css">
+  <link rel="stylesheet" href="/assets/css/pages/commerce.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+
+  <main id="main" class="container page-main">
+    <nav class="breadcrumb" id="crumb" aria-label="Breadcrumb"></nav>
+    <div class="detail" id="detail">
+      <div class="detail-grid">
+        <figure class="detail-media">
+          <img id="p-image" alt="">
+        </figure>
+
+        <section class="detail-info">
+          <p class="product-store" id="p-store"></p>
+          <h1 id="p-name"></h1>
+          <div class="rating" id="p-rating"></div>
+
+          <div class="price-block">
+            <strong id="p-price"></strong>
+            <s id="p-compare"></s>
+            <span class="tag tag-off" id="p-discount"></span>
+          </div>
+
+          <p class="lead" id="p-desc"></p>
+          <p class="stock" id="p-stock"></p>
+
+          <label class="field" id="variant-field" hidden>
+            <span>Pilihan</span>
+            <select id="p-variant"></select>
+          </label>
+
+          <div class="buy-row">
+            <div class="qty" role="group" aria-label="Jumlah">
+              <button type="button" data-step="-1" aria-label="Kurangi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <span id="qty-value">1</span>
+              <button type="button" data-step="1" aria-label="Tambah"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn-primary" id="btn-add" type="button">Tambah ke keranjang</button>
+            <button class="btn btn-ghost" id="btn-buy" type="button">Beli sekarang</button>
+            <button class="btn btn-ghost" id="btn-wish" type="button" hidden>Simpan ke favorit</button>
+          </div>
+
+          <ul class="perks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Pengiriman cepat ke seluruh Indonesia</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Garansi toko 7 hari</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>Retur mudah dalam 7 hari</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <section class="reviews panel" id="reviews"></section>
+  </main>
+
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/product-detail.js"></script>
+</body>
+</html>

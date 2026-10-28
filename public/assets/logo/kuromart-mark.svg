@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="400 300 570 410" role="img" aria-label="KUROMART">
+  <defs>
+    <linearGradient id="mp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="mw" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C9CBD3"/>
+    </linearGradient>
+  </defs>
+  <path d="M420 388 L520 318 L520 632 L420 695 Z" fill="url(#mw)"/>
+  <path d="M650 318 L780 318 L580 488 Q540 520 470 585 L425 625 Q418 600 430 585 Q480 530 520 500 Z" fill="url(#mp)"/>
+  <path d="M520 555 Q560 505 600 510 L730 640 Q745 660 720 688 Q690 700 660 675 L560 585 Q530 560 520 555 Z" fill="url(#mw)"/>
+  <path d="M862 452 L888 428 L948 428" fill="none" stroke="url(#mp)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M625 470 L865 470 L835 600 Q830 620 808 620 L712 620 Q695 620 690 600 Z" fill="url(#mp)"/>
+  <path d="M665 508 L795 508 L790 525 L670 525 Z" fill="#C4B5FD"/>
+  <path d="M690 550 L785 550 L780 572 L695 572 Z" fill="#C4B5FD"/>
+  <circle cx="733" cy="660" r="23" fill="#8B5CF6"/>
+  <circle cx="800" cy="660" r="23" fill="#8B5CF6"/>
+</svg>

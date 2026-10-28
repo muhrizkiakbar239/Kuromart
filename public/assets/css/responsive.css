@@ -1,0 +1,39 @@
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-perks { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 860px) {
+  .main-nav { display: none; }
+  .header-inner { gap: 14px; height: 72px; }
+  .brand img { height: 52px; }
+  .search { max-width: none; }
+}
+
+@media (max-width: 767px) {
+  body { padding-bottom: 84px; }
+  .header-inner { height: 64px; }
+  .brand img { height: 44px; }
+  .search input { height: 42px; }
+  .search button { height: 32px; width: 32px; top: 5px; }
+  .icon-btn.cart-btn { display: none; }
+
+  .bottom-nav {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index: 60; background: rgba(17, 17, 19, 0.96); border-radius: 22px;
+    padding: 8px; box-shadow: 0 16px 40px rgba(0,0,0,.3);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  }
+  .bottom-nav a {
+    position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px;
+    padding: 8px 4px; border-radius: 16px; color: #8B8B96; font-size: 0.7rem; font-weight: 500;
+  }
+  .bottom-nav a svg { width: 22px; height: 22px; }
+  .bottom-nav a.is-active { color: var(--white); background: var(--purple); }
+  .bottom-nav .badge { top: 2px; right: calc(50% - 22px); }
+  .toast { bottom: 112px; }
+  .site-footer { margin-top: 64px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-perks { flex-direction: column; }
+}

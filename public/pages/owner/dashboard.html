@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dashboard owner - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/auth.css">
+  <link rel="stylesheet" href="/assets/css/pages/seller-dashboard.css">
+  <link rel="stylesheet" href="/assets/css/pages/commerce.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+  <main id="main" class="container page-main">
+    <header class="page-head"><div><p class="eyebrow eyebrow-dark">Dashboard owner</p><h1>Ringkasan platform</h1></div></header>
+    <div class="stats" id="stats"></div>
+    <div class="owner-grid">
+      <section class="panel"><h2>Persetujuan toko</h2><div id="pending-stores"></div></section>
+      <section class="panel"><h2>Buat voucher</h2>
+        <form id="voucher-form" class="inline-form" novalidate>
+          <label class="field"><span>Kode</span><input name="code" placeholder="CONTOH10" required></label>
+          <label class="field"><span>Jenis</span><select name="type"><option value="percent">Persen</option><option value="fixed">Nominal</option></select></label>
+          <label class="field"><span>Nilai</span><input name="value" type="number" min="1" required></label>
+          <label class="field"><span>Belanja minimal</span><input name="minSubtotal" type="number" min="0" value="0"></label>
+          <label class="field"><span>Maks. potongan</span><input name="maxDiscount" type="number" min="0"></label>
+          <label class="field"><span>Kuota pemakaian</span><input name="usageLimit" type="number" min="1"></label>
+          <label class="field full"><span>Berakhir pada</span><input name="endsAt" type="datetime-local"></label>
+          <p class="form-error full" id="voucher-form-error" role="alert"></p>
+          <button class="btn btn-primary full" type="submit">Simpan voucher</button>
+        </form>
+      </section>
+    </div>
+    <div class="owner-grid">
+      <section class="panel"><h2>Voucher</h2><div id="voucher-table"></div></section>
+      <section class="panel"><h2>Pesanan terbaru</h2><div id="order-table"></div></section>
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/owner/dashboard.js"></script>
+</body>
+</html>

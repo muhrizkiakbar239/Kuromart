@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Checkout - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/auth.css">
+  <link rel="stylesheet" href="/assets/css/pages/commerce.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+  <main id="main" class="container page-main">
+    <header class="page-head"><p class="eyebrow eyebrow-dark">Checkout</p><h1>Selesaikan pesananmu</h1></header>
+    <div id="checkout-body">
+      <div class="checkout-grid">
+        <form id="checkout-form" class="panel" novalidate>
+          <h2>Alamat pengiriman</h2>
+          <div class="inline-form">
+            <label class="field"><span>Nama penerima</span><input name="name" minlength="3" maxlength="80" required></label>
+            <label class="field"><span>Nomor telepon</span><input name="phone" minlength="8" maxlength="20" required></label>
+            <label class="field full"><span>Alamat lengkap</span><textarea name="street" rows="2" minlength="5" maxlength="200" required></textarea></label>
+            <label class="field"><span>Kota</span><input name="city" minlength="2" maxlength="80" required></label>
+            <label class="field"><span>Kode pos</span><input name="postalCode" minlength="3" maxlength="10" required></label>
+          </div>
+          <h2 style="margin-top:28px">Metode pembayaran</h2>
+          <div class="inline-form">
+            <label class="field full"><span>Pilih metode</span>
+              <select name="paymentMethod">
+                <option value="transfer">Transfer bank (demo)</option>
+                <option value="ewallet">E-wallet (demo)</option>
+                <option value="cod">Bayar di tempat</option>
+              </select>
+            </label>
+          </div>
+          <p class="muted">Mode demo: pesanan langsung tercatat tanpa pembayaran sungguhan.</p>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button class="btn btn-primary btn-block" id="pay-btn" type="submit">Buat pesanan</button>
+        </form>
+
+        <aside class="summary-card">
+          <h2>Ringkasan</h2>
+          <div id="summary-items"></div>
+          <div class="voucher-row">
+            <input id="voucher-input" placeholder="Kode voucher" aria-label="Kode voucher">
+            <button class="btn btn-ghost btn-small" id="voucher-apply" type="button">Terapkan</button>
+          </div>
+          <p class="form-error" id="voucher-error" role="alert"></p>
+          <p class="voucher-state" id="voucher-state"></p>
+          <div class="sum-line"><span>Subtotal</span><span id="t-subtotal"></span></div>
+          <div class="sum-line"><span>Diskon</span><span id="t-discount"></span></div>
+          <div class="sum-line"><span>Ongkir</span><span id="t-shipping"></span></div>
+          <div class="sum-line total"><span>Total</span><strong id="t-total"></strong></div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/checkout.js"></script>
+</body>
+</html>

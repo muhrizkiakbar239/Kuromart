@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Form produk - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/auth.css">
+  <link rel="stylesheet" href="/assets/css/pages/seller-dashboard.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+  <main id="main" class="container page-main">
+    <header class="page-head">
+      <p class="eyebrow eyebrow-dark">Dashboard seller</p>
+      <h1 id="form-title">Tambah produk</h1>
+    </header>
+    <div class="product-form-layout">
+      <form id="product-form" class="form card-form" novalidate>
+        <label class="field"><span>Nama produk</span><input type="text" name="name" minlength="3" maxlength="120" required></label>
+        <label class="field"><span>Kategori</span><select name="categoryId" required></select></label>
+        <label class="field"><span>Deskripsi</span><textarea name="description" rows="6" maxlength="5000"></textarea></label>
+        <div class="field-row">
+          <label class="field"><span>Harga (Rp)</span><input type="number" name="price" min="100" step="1" required></label>
+          <label class="field"><span>Harga coret (Rp)</span><input type="number" name="compareAt" min="0" step="1"></label>
+        </div>
+        <div class="field-row">
+          <label class="field"><span>Stok</span><input type="number" name="stock" min="0" step="1" required></label>
+          <label class="field"><span>Status</span>
+            <select name="status">
+              <option value="active">Aktif</option>
+              <option value="draft">Draf</option>
+            </select>
+          </label>
+        </div>
+        <label class="field"><span>Gambar produk (JPG, PNG, WEBP, maks 2 MB)</span><input type="file" name="image" accept="image/jpeg,image/png,image/webp"></label>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <div class="form-actions">
+          <a class="btn btn-ghost" href="/pages/seller/products.html">Batal</a>
+          <button class="btn btn-primary" id="submit-btn" type="submit">Simpan produk</button>
+        </div>
+      </form>
+      <aside class="preview-card">
+        <p class="muted">Pratinjau gambar</p>
+        <img id="p-preview" alt="Pratinjau gambar produk" hidden>
+      </aside>
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/seller/product-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.status { display: inline-block; padding: 6px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; background: var(--purple-soft); color: var(--purple-deep); white-space: nowrap; }
+.status-shipped { background: #DBEAFE; color: #1E40AF; }
+.status-completed { background: #DCFCE7; color: #166534; }
+.status-cancelled { background: #FEE2E2; color: #991B1B; }
+
+.panel { background: var(--white); border: 1px solid #ECECF1; border-radius: var(--radius-lg); padding: 28px; margin-top: 20px; }
+.panel h2 { font-size: 1.2rem; margin-bottom: 14px; }
+
+.checkout-grid, .order-grid, .owner-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: start; }
+.order-grid { grid-template-columns: 1fr 1fr; }
+.owner-grid { grid-template-columns: 1fr 1fr; }
+.summary-card { position: sticky; top: 104px; background: var(--ink); color: var(--white); border-radius: var(--radius-lg); padding: 26px; }
+.summary-card h2 { font-size: 1.2rem; margin-bottom: 14px; }
+.sum-item { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid #26262D; font-size: 0.92rem; }
+.sum-item img { width: 52px; height: 52px; border-radius: 10px; object-fit: cover; }
+.sum-item span.muted { display: block; font-size: 0.8rem; color: #8B8B96; }
+.summary-card .sum-line { display: flex; justify-content: space-between; padding: 8px 0; color: #D6D6DE; font-size: 0.95rem; }
+.summary-card .sum-line.total { border-top: 1px solid #2A2A33; margin-top: 6px; padding-top: 14px; color: var(--white); font-size: 1.1rem; }
+.summary-card .sum-line.total strong { color: var(--purple-glow); }
+.voucher-row { display: flex; gap: 8px; margin: 16px 0 6px; }
+.voucher-row input { flex: 1; height: 44px; border-radius: 12px; border: 1px solid #2E2E36; background: #1C1C21; color: var(--white); padding: 0 14px; }
+.voucher-state { font-size: 0.85rem; color: var(--purple-glow); min-height: 1.2em; }
+.muted-dark { color: #8B8B96; font-size: 0.85rem; }
+
+.order-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+.order-head h1 { font-size: 1.7rem; margin-top: -4px; }
+.order-item, .sum-line { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.order-item div { display: flex; flex-direction: column; }
+.sum-line.total { border-bottom: 0; font-size: 1.05rem; }
+.order-actions { margin-top: 20px; }
+.btn-danger { background: #FEE2E2; color: #B91C1C; }
+.new-banner { background: #DCFCE7; color: #166534; padding: 16px 20px; border-radius: 14px; margin-bottom: 20px; font-weight: 600; }
+.new-banner[hidden] { display: none; }
+
+.order-row {
+  display: grid; grid-template-columns: 1fr auto auto; gap: 16px; align-items: center;
+  background: var(--white); border: 1px solid #ECECF1; border-radius: var(--radius); padding: 18px 20px; margin-bottom: 12px;
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.order-row:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.order-row div { display: flex; flex-direction: column; gap: 4px; }
+
+.seller-order { background: var(--white); border: 1px solid #ECECF1; border-radius: var(--radius); padding: 20px; margin-bottom: 14px; }
+.seller-order-head, .seller-order-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.seller-order-head div { display: flex; flex-direction: column; }
+.order-lines { list-style: none; margin: 14px 0; border-top: 1px solid var(--line); }
+.order-lines li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+.seller-order-total { display: flex; align-items: center; gap: 12px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; margin-bottom: 8px; }
+.stat { background: var(--white); border: 1px solid #ECECF1; border-radius: var(--radius); padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+.stat span { font-size: 0.85rem; color: var(--muted); }
+.stat strong { font-size: 1.35rem; letter-spacing: -0.02em; }
+.table-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.table-row div { display: flex; flex-direction: column; }
+.row-end { align-items: flex-end !important; flex-direction: column; gap: 4px; }
+.table-row .muted { font-size: 0.85rem; }
+.inline-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.inline-form .full { grid-column: 1 / -1; }
+
+.notif { background: var(--white); border: 1px solid #ECECF1; border-radius: var(--radius); padding: 18px 20px; margin-bottom: 12px; }
+.notif.is-unread { border-left: 4px solid var(--purple); }
+.notif h3 { font-size: 1rem; margin-bottom: 4px; }
+.notif p { margin-bottom: 6px; }
+
+.review { border-top: 1px solid var(--line); padding: 16px 0; display: flex; flex-direction: column; gap: 6px; }
+.review-form { display: flex; flex-direction: column; gap: 10px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.review-form textarea { border-radius: 12px; border: 1px solid var(--line); padding: 10px 12px; font: inherit; }
+.stars { display: flex; gap: 8px; }
+.stars label { cursor: pointer; }
+.stars input { position: absolute; opacity: 0; }
+.stars span { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--line); font-weight: 600; }
+.stars input:checked + span { background: var(--purple); color: #fff; border-color: var(--purple); }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 22px; }
+.tabs a { padding: 9px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--white); font-weight: 600; font-size: 0.92rem; }
+.tabs a.is-active { background: var(--ink); color: var(--white); border-color: var(--ink); }
+
+@media (max-width: 860px) {
+  .checkout-grid, .order-grid, .owner-grid { grid-template-columns: 1fr; }
+  .summary-card { position: static; }
+  .order-row { grid-template-columns: 1fr auto; }
+  .order-row strong { grid-column: 1 / -1; }
+  .inline-form { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jadi seller - KUROMART</title>
+  <link rel="icon" href="/assets/logo/kuromart-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages/auth.css">
+  <link rel="stylesheet" href="/assets/css/pages/seller-dashboard.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div id="app-header"></div>
+  <main id="main" class="container auth-wrap">
+    <section class="auth-card">
+      <p class="eyebrow eyebrow-dark">Jadi seller</p>
+      <h1>Ajukan toko kamu</h1>
+      <p class="muted">Setelah disetujui, kamu bisa menambahkan dan mengelola produk.</p>
+      <p class="notice" id="apply-status" hidden></p>
+      <form id="apply-form" class="form" novalidate>
+        <label class="field"><span>Nama toko</span><input type="text" name="name" minlength="3" maxlength="80" required></label>
+        <label class="field"><span>Deskripsi singkat</span><textarea name="description" rows="4" maxlength="500"></textarea></label>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="btn btn-primary btn-block" type="submit">Kirim pengajuan</button>
+      </form>
+    </section>
+  </main>
+  <div id="app-footer"></div>
+  <script type="module" src="/assets/js/pages/seller/apply.js"></script>
+</body>
+</html>

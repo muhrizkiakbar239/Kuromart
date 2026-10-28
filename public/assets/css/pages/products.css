@@ -1,0 +1,14 @@
+.page-main { padding-top: 40px; padding-bottom: 40px; }
+.page-head { margin-bottom: 28px; }
+.page-head h1 { margin-top: -4px; }
+.catalog-toolbar { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 18px; flex-wrap: wrap; }
+.catalog-search { display: flex; gap: 8px; flex: 1; max-width: 520px; }
+.catalog-search input {
+  flex: 1; height: 46px; border-radius: 999px; padding: 0 20px;
+  border: 1px solid var(--line); background: var(--white);
+}
+.catalog-search input:focus { outline: 3px solid var(--purple-soft); border-color: var(--purple); }
+.chip-row { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; margin-bottom: 14px; }
+.chip-row::-webkit-scrollbar { display: none; }
+.result-count { font-size: 0.9rem; margin-bottom: 20px; }
+.load-more-wrap { display: flex; justify-content: center; margin-top: 36px; }
